@@ -1,0 +1,170 @@
+html,body,#root{
+    height: 100vh;
+    width: 100%;
+  background-color: #131313;
+  overflow: hidden;
+}
+
+.add-todo-input{
+   background-color: #252525;
+}
+.todo-list{
+    width: 90%;
+    overflow-y: scroll;
+}
+
+.todo-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+.todo-list::-webkit-scrollbar-track {
+  background: #252525;
+}
+
+.todo-list::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.todo-list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+.side-bar{
+  width: 30rem;
+}
+
+/* Example styles for react-calendar */
+
+/* Apply styles to the outer container of the calendar */
+/* Base styles for the entire calendar */
+.react-calendar {
+  background-color: #252525 !important; /* Dark background */
+  color: white; /* White text */
+  border: 1px solid #444; /* Thin gray border */
+  border-radius: 5px; /* Rounded corners */
+  font-weight: 600 ;
+  width: 18rem !important;
+}
+
+/* Styles for individual calendar tiles */
+.react-calendar__tile {
+  padding: 10px; /* Add some padding */
+  cursor: pointer; /* Make tiles clickable */
+  transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+/* Hover effect for calendar tiles */
+.react-calendar__tile:hover {
+  color: #252525 !important;
+}
+
+/* Styles for navigation buttons (previous & next month) */
+.react-calendar__navigation {
+  display: flex; /* Arrange buttons horizontally */
+  justify-content: space-between; /* Align buttons to opposite ends */
+}
+
+/* Styles for navigation button icons */
+.react-calendar__navigation__button {
+  font-size: 1.2em; /* Increase icon size */
+  color: inherit; /* Inherit color from base styles */
+  padding: 5px; /* Add some padding around icons */
+  cursor: pointer; /* Make buttons clickable */
+}
+
+/* Styles for month and year label */
+.react-calendar__navigation__label {
+  font-weight: bold; /* Make month and year bold */
+  text-align: center; /* Center align label */
+  margin-bottom: 10px; /* Add some space below the label */
+}
+.react-calendar__navigation__label:hover{
+  color: #252525 !important;
+}
+/* Styles for weekdays (Mon, Tue, Wed) */
+.react-calendar__month-view__weekdays {
+  text-transform: uppercase; /* Make weekdays uppercase */
+  font-size: 0.8em; /* Slightly smaller font for weekdays */
+  text-align: center; /* Center align weekdays */
+}
+
+/* Styles for days of the month (1, 2, 3) */
+.react-calendar__month-view__days {
+  display: flex; /* Arrange days in a grid */
+  flex-wrap: wrap; /* Wrap days to multiple lines if needed */
+}
+
+/* Styles for the active day (hovering) */
+.react-calendar__month-view__days__day--active {
+  background-color: #444; /* Light gray background on hover */
+}
+
+/* Styles for the selected day */
+.react-calendar__month-view__days__day--selected {
+  background-color: #007bff; /* Blue background for selected day */
+  color: white; /* White text for selected day */
+}
+
+/* Styles for day of week text (Mon, Tue, Wed) */
+.react-calendar__month-view__weekdays__weekday abbr {
+  margin: 0 5px; /* Add some space between weekdays */
+}
+
+/* Styles for the current day */
+.react-calendar__tile--now {
+  color: #252525; /* Light gray background for today */
+  font-weight: bold; /* Make today's date bold */
+}
+ .react-calendar__navigation__prev2-button:hover, .react-calendar__navigation__prev-button:hover, .react-calendar__navigation__next-button:hover, .react-calendar__navigation__next2-button:hover{
+  color: #252525;
+}
+.left-side-bar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.left-side-bar::-webkit-scrollbar-track {
+  background: #252525;
+}
+
+.left-side-bar::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.left-side-bar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media screen and (max-width: 767px) {
+  
+}
+
+/* Media query for screens between 768px and 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .todo-wrapper {
+    /* Styles for screens between 768px and 1023px here */
+  }
+}
+
+/* Media query for screens larger than 1023px */
+@media screen and (min-width: 1024px) {
+  .todo-wrapper {
+    /* Styles for screens larger than 1023px here */
+  }
+}
+.part1{
+  transform: rotateZ(-45deg);
+}
+
+.part2{
+  transform: rotateZ(45deg);
+}
+.close-sidebar{
+  width: 0;
+  overflow-y: hidden !important;
+}
+.open-sidebar{
+  width: 18rem !important;
+  overflow-y: scroll !important;
+  border: 1px solid #131313;
+}
